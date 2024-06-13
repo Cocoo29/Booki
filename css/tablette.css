@@ -1,0 +1,132 @@
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+@media screen and (min-width: 769px) and ( max-width: 1024px) {
+
+    .main-container {
+        padding: 0 1px;
+        margin-left: 3rem;
+        width: 90%;
+    }
+
+    .head {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: 66px;
+    }
+
+    .hebergements-and-populaires section {
+        border-radius: 10px;
+    }
+
+    .divLink {
+        display: flex;
+        justify-content: center; /* Aligner "Hébergements" à gauche et "Activités" à droite */
+        width: 75%; /* Pleine largeur */
+        margin-left: 22rem;
+    }
+
+    .linkHead {
+        padding-left: 61px;
+        padding-top: 10px;
+    }
+
+    .input {
+        width: 33%;
+     
+        font-size: 20px;
+      
+    }
+    .input[Type=Text]::placeholder {
+        font-size: 15px;
+    }
+
+    .activite_image {
+       height: 240px;
+        top: 100px;
+    }
+
+    .bouton_rechercher_desktop_tablette {
+        background-color: #0065FC;
+        color: white;
+        width: 133px;
+        border: 0px solid #F2F2F2;
+        border-radius: 0px 18px 18px 0px;
+        padding: 16px;
+        font-weight: bold;
+        font-size: 16px;
+        display: inline-block;
+        position: relative;
+        margin-left: -8px;
+    }
+    #selection_activites {
+        height: 310px;
+    }
+
+    .logo {
+        width: 100%;
+        margin: 0 auto 70px; /* Centrer le logo et ajouter l'espacement en bas */
+
+    }
+    #logoTitle { 
+        width: 77px;
+        margin-top: 27px;
+    }
+    
+    .hebergements-and-populaires {
+        flex-direction: column;
+    }
+
+    .hebergements {
+        width: 100%;
+    }
+
+    .populaires {
+        width: 100%;
+        margin-top: 50px;
+
+    }
+
+    .populaires-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .populaires-cards img {
+        width: 100%;
+        height: 10rem;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .populaires-cards a {
+        width: 30%;
+        height: 60%;
+    }
+    .populaires-cards {
+        width: 100%;
+    }
+
+    .populaires-cards .card-content {
+        width: 100%;
+        height: 100px;
+    }
+
+    .populaires-cards .card-title {
+        font-size: 14px;
+    }
+
+    .populaires-cards .card-subtitle {
+        font-size: 13px;
+    }
+
+    .card {
+        width: 100%;
+        flex-direction: column;
+    }
+
+
+}
+
+

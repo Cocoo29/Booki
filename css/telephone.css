@@ -1,0 +1,309 @@
+/* téléphone 768px) */
+@media screen and (max-width: 768px) {
+
+    html {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    .head {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centrer les éléments horizontalement */
+    }
+
+    #identite_du_site {
+        margin-left: 2rem;
+    }
+
+    .logo {
+        width: 170px;
+        display: flex;
+        justify-content: center;
+        margin-top: 46px;
+        margin-bottom: 70px;
+        align-items: center;
+    }
+
+  #logoTitle {
+    width: 140px;
+    height: auto;
+  }
+
+    .divLink {
+        display: flex;
+        justify-content: space-between; /* Aligner "Hébergements" à gauche et "Activités" à droite */
+        align-items: center;
+        width: 100%; /* Pleine largeur */
+    }
+
+    .linkHead {
+        flex: 1; /* Occuper une part égale de l'espace disponible */
+        text-align: center; /* Centrer le texte */
+        margin-bottom: 10px;
+    }
+
+    #formulaire {
+        width: 92%;
+        margin: auto;
+        height: 100px;
+        padding-left: 10px;
+    }
+
+    .input {
+        width: 67%;
+        height: 55%;
+        margin-top: 17px;
+    }
+
+    #info {
+
+        padding-left: 40px;
+    }
+
+    .fa-magnifying-glass-mobile {
+        display: inline-block;
+        font-size: 18px;
+        border: 2px solid #F2F2F2;
+        background-color: #0050e7;
+        padding: 16px;
+        padding-left: 17px;
+        border-radius: 19px;
+        color: white;
+        box-shadow: black !important;
+        margin-left: -25px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* effet d'ombrage */
+    }
+
+    .fa-location-dot {
+
+        font-size: 20px;
+        padding: 17px;
+        color: black;
+    }
+
+    .linkHead:nth-child(1) {
+        border-bottom: 2px solid #0065FC; /* Ajustez la largeur de la barre */
+        padding-left: 1px;
+        border-top: none;
+    }
+
+    /* Éléments de la section "Filtres" */
+    #titre_filtres {
+        margin-bottom: 40px;
+        margin-left: 9px;
+    }
+
+    #filtres {
+        display: flex;
+        flex-direction: column;
+        font-weight: bold;
+        font-size: 18px;
+        column-gap: 50px;
+        padding-top: 40px;
+        margin-left: 25px;
+        width: 80%;
+    }
+
+    .card {
+        flex-direction: column;
+    }
+
+    #filtres_categories {
+        display: flex;
+        margin: auto;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        box-sizing: content-box;
+    }
+
+    .aspect_filtres {
+        display: flex;
+        border: 3px solid #F2F2F2;
+        border-radius: 30px;
+        font-size: 85%;
+        padding: 0 19px;
+        text-align: center;
+        text-indent: -20px;
+        align-items: center;
+        justify-content: space-evenly;
+        transition: background-color 0.3s, color 0.3s;
+        width: calc(50% - 15px); /* Chaque bouton occupe 50% de la largeur avec un espace de 15px entre eux */
+        margin-bottom: 40px;
+
+    }
+
+    .icone_filtres {
+        width: 5px;
+        height: 47px;
+        font-size: 20px;
+        color: #0065FC;
+        border-radius: 50%;
+        padding: 14px;
+        margin-right: 5px;
+        margin-left: -10px;
+        margin-top: -4px;
+    }
+
+    /* Section "Recherche" */
+
+
+    .hebergements-and-populaires {
+        flex-direction: column; /* Inverser la direction en colonne */
+        width: 100%;
+    }
+
+    .main-container {
+        padding: 0;
+    }
+
+    #mainGlobal {
+        width: 100%;
+    }
+
+    .populaires-cards img {
+        width: 33%;
+    }
+
+    #afficher_plus a {
+        text-decoration: none;
+        color: black;
+        position: relative;
+        right: 21px;
+    }
+
+    .hebergements-and-populaires {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hebergements {
+        order: 2;
+        width: 100%;
+        background-color: white !important;
+    }
+
+    .card {
+        flex-direction: row;
+    }
+
+    #resultats_hebergements {
+        flex-direction: column;
+    }
+
+    .choix_hebergements {
+        width: 100%;
+        height: 310px;
+    }
+
+    .populaires {
+        order: 1;
+        width: 100%;
+    }
+
+    .hebergements-and-populaires section {
+        border-radius: unset;
+        width: 100%;
+    }
+
+    .populaires-cards {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        border-radius: initial;
+    }
+
+    #activites_ville {
+        order: 3;
+    }
+
+    .footer {
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #f2f2f2;
+        padding: 0 15px;
+        box-sizing: border-box;
+        line-height: 40px;
+        gap: 40px;
+    }
+
+    .bouton_rechercher_desktop_tablette {
+        display: none; /* Masquez le bouton de recherche */
+    }
+
+
+
+    /* Galerie d'hébergements */
+    .hebergements .resultats_hebergements {
+        display: flex;
+        flex-wrap: nowrap; /* Empêche le retour à la ligne des éléments */
+        overflow-x: scroll; /* Ajoute une barre de défilement horizontal si nécessaire */
+        scroll-snap-type: x mandatory; /* Active le défilement par élément */
+    }
+
+    .choix_hebergements {
+        flex: 0 0 auto; /* Les éléments n'auront pas de flexibilité en largeur */
+        scroll-snap-align: start; /* Assure que le défilement s'aligne sur les éléments */
+        margin-right: 10px; /* Marge entre les éléments */
+    }
+
+    .titre_prix_etoiles_hebergements {
+        margin-top: 200px;
+    }
+
+    .titre_hebergements {
+        font-size: 1.3rem;
+
+    }
+
+    .prix_hebergements {
+        font-size: 1.3rem;
+    }
+
+    .etoiles_hebergements {
+        font-size: 1.2rem;
+        margin-bottom: 3px;
+    }
+
+    .hebergements .hebergements_image {
+        max-width: 100%; /* Ajustez la largeur maximale pour s'adapter à l'écran du téléphone */
+        height: 60%; /* Pour conserver le rapport hauteur-largeur */
+    }
+
+    .hebergements .choix_hebergements a {
+        flex-direction: column;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+    }
+
+    #selection_activites {
+        width: 100%; /* La largeur maximale sera de 100% de la largeur du conteneur */
+        height: auto; /* La hauteur s'ajustera automatiquement pour maintenir la proportion d'origine */
+        flex-direction: column;
+    }
+
+    /* Redimensionnez les images pour qu'elles prennent la largeur de l'écran */
+    .activite_image {
+        width: 100%;
+        height: 76%;
+    }
+
+    .tous_les_elements {
+        margin-bottom: 30px;
+        width: 100% !important;
+        height: 300px;
+    }
+
+    .titre_selection_activite {
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+    }
+
+}
